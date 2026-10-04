@@ -10,7 +10,14 @@
 
 // TODO: Write a function that calculates the price of an order of apples given
 // the quantity bought.
-// fn calculate_price_of_apples(???) -> ??? { ??? }
+const MINIMUM_DISCOUNT_COUNT: i32 = 40;
+fn calculate_price_of_apples(count: i32) -> i32 {
+    if count > MINIMUM_DISCOUNT_COUNT {
+        count
+    } else {
+        count * 2
+    }
+}
 
 fn main() {
     // You can optionally experiment here.
